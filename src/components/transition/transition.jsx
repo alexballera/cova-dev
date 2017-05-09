@@ -1,7 +1,7 @@
 'use strict'
 import React from 'react'
 
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 
 class Transition extends React.Component {
   render () {
