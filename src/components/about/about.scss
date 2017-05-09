@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+@import '../../static/scss/variables';
+
+.about {
+  &-title {
+    color: $maroon;
+    font-family: Roboto;
+  }
+  &-images {
+    height: 200px;
+  }
+}
