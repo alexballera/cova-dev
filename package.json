@@ -1,7 +1,7 @@
 {
   "name": "cova-dev",
   "version": "1.0.0",
-  "description": "",
+  "description": "Maquetado del sitio web Cova Dev",
   "main": "webpack.config.js",
   "scripts": {
     "test": "standard",
