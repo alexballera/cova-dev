@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 
-// @import './static/scss/reset';
-@import './static/scss/normalize';
-@import './static/scss/variables';
-@import './static/scss/base';
-@import './static/scss/animations';
+@import './styles/scss/utils/**/*';
+@import '../node_modules/materialize-css/sass/materialize';
+@import './styles/scss/vendors/**/*';
+@import './styles/scss/customs/**/*';
+@import './components/**/*';
+@import './views/**/**/*';
