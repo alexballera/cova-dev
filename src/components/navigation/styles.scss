@@ -1,10 +1,10 @@
-@charset 'UTF-8';
+ @charset 'UTF-8';
 @import '../../static/scss/variables';
 
 // Navegación
 
 .navbar {
-  // background-color: $primary-color;
+  background-color: $white;
   height: $heigth-navbar;
   position: fixed;
   z-index: 1000;
@@ -17,9 +17,15 @@
     height: $heigth-navbar;
     padding: 0 !important;
     width: 100% !important;
-
+  }
+  &-logo {
+    margin-left: 2rem !important;
     img {
       height: $heigth-navbar;
+    }
+    div div {
+      height: $heigth-navbar;
+      padding: 0 !important;
     }
   }
   &-desktop {

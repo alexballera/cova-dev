@@ -1,15 +1,9 @@
 @charset 'UTF-8';
 @import '../../static/scss/variables';
 
-$cornflowerblue: #6495ed;
-$rebeccapurple: #639;
-
 .home {
+  padding-top: $heigth-navbar;
   .titulo {
-    &.cssgradients {
-      background-image: linear-gradient($cornflowerblue, $rebeccapurple);
-    }
-
     h1 {
       position: relative;
       top: -1rem;
@@ -19,6 +13,7 @@ $rebeccapurple: #639;
   .sub-titulo {
     color: $orange;
   }
+  
   .imagenHome {
     height: 100px;
   }

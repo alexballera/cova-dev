@@ -12,8 +12,9 @@ import './index.scss'
 import WebFont from './static/js/WebFont'
 
 // Materialize
+import 'jquery'
 import '../node_modules/materialize-css/sass/materialize.scss'
-// import '../node_modules/materialize-css/dist/js/materialize.js'
+import '../node_modules/materialize-css/dist/js/materialize.js'
 
 // Components
 import Routers from './router.jsx'
@@ -33,7 +34,7 @@ import Loading from './components/spinner/spinner.component.jsx'
 ) */
 class App extends React.Component {
   componentWillMount () {
-    console.log('Se ejecuta antes de inyectar el DOM, estoy en navigation.component')
+    console.log('Se ejecuta antes de inyectar el DOM, estoy en index.jsx')
     Loading()
   }
 

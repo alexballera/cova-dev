@@ -10,7 +10,8 @@
     "start": "npm run test && nodemon --watch webpack.config.js --exec \"webpack-dev-server --env dev --open\""
   },
   "standard": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "ignore": "/src/components/home/sections/materialize.slider.js"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,6 @@
 // Dependencias
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import Scroll from 'react-scroll'
 import {
   Menu,
   Divider,
@@ -12,22 +11,14 @@ import {
   MenuItem
 } from 'material-ui'
 
-// Componentes
-import DropDownMenu from './dropdown.component.jsx'
-
 // Datos
 import data from '../../data/navigation.data'
 
 // Estáticos
-import ArrowDropDown from 'material-ui/svg-icons/navigation/arrow-drop-down'
-import ArrowForward from 'material-ui/svg-icons/navigation/chevron-right'
 import MenuIcon from 'material-ui/svg-icons/navigation/menu'
-import Logo from '../../static/images/disney-logo.jpg'
+import Logo from '../../static/images/cova-solutions-logo.jpg'
 import styles from './styles.jsx'
 import './styles.scss'
-
-const ScrollLink = Scroll.Link
-const scrollSpy = Scroll.scrollSpy
 
 class Navigation extends React.Component {
   constructor (props) {
@@ -40,10 +31,6 @@ class Navigation extends React.Component {
     this.handleClose = this.handleClose.bind(this)
     this.withoutDropdown = this.withoutDropdown.bind(this)
     this.withDropdown = this.withDropdown.bind(this)
-  }
-
-  componentDidMount () {
-    scrollSpy.update()
   }
 
   handleToggle () {
@@ -85,22 +72,12 @@ class Navigation extends React.Component {
             onClick={this.withDropdown}
             />
           <div className='navbar-desktop hide-on-med-and-down' >
-            { this.state.with ? (
-              <MenuItem
-                primaryText={data.menu.item1.title}
-                style={styles.menuItem}
-                anchorOrigin={{horizontal: 'left', vertical: 'bottom'}}
-                rightIcon={<IconButton><ArrowDropDown /></IconButton>}
-                menuItems={DropDownMenu}
-                />
-            ) : (
-              <MenuItem
-                primaryText={data.menu.item1.title}
-                style={styles.menuItem}
-                containerElement={<Link to={data.menu.item1.url} />}
-                onClick={this.withDropdown}
-                />
-            )}
+            <MenuItem
+              primaryText={data.menu.item1.title}
+              style={styles.menuItem}
+              containerElement={<Link to={data.menu.item1.url} />}
+              onClick={this.withDropdown}
+              />
             <MenuItem
               primaryText={data.menu.item2.title}
               onClick={this.withoutDropdown}
@@ -126,81 +103,13 @@ class Navigation extends React.Component {
           onRequestChange={(open) => this.setState({open})}
           onChange={this.withoutDropdown}
           >
-          { this.state.with ? (
-            <MenuItem
-              primaryText={data.menu.item1.title}
-              style={styles.menuItem}
-              rightIcon={<IconButton><ArrowForward /></IconButton>}
-              menuItems={
-              [
-                <MenuItem
-                  onTouchTap={this.handleClose}
-                  primaryText={data.dropdownMenuScrollSections.item1.title}
-                  style={styles.menuItem}
-                  containerElement={
-                    <ScrollLink
-                      spy
-                      smooth
-                      duration={1000}
-                      activeClass='active'
-                      to={data.dropdownMenuScrollSections.item1.url}
-                      />
-                    }
-                  />,
-                <MenuItem
-                  onTouchTap={this.handleClose}
-                  primaryText={data.dropdownMenuScrollSections.item2.title}
-                  style={styles.menuItem}
-                  containerElement={
-                    <ScrollLink
-                      spy
-                      smooth
-                      duration={1000}
-                      activeClass='active'
-                      to={data.dropdownMenuScrollSections.item2.url}
-                      />
-                    }
-                  />,
-                <MenuItem
-                  onTouchTap={this.handleClose}
-                  primaryText={data.dropdownMenuScrollSections.item3.title}
-                  style={styles.menuItem}
-                  containerElement={
-                    <ScrollLink
-                      spy
-                      smooth
-                      duration={1000}
-                      activeClass='active'
-                      to={data.dropdownMenuScrollSections.item3.url}
-                      />
-                    }
-                  />,
-                <MenuItem
-                  onTouchTap={this.handleClose}
-                  primaryText={data.dropdownMenuScrollSections.item4.title}
-                  style={styles.menuItem}
-                  containerElement={
-                    <ScrollLink
-                      spy
-                      smooth
-                      duration={1000}
-                      activeClass='active'
-                      to={data.dropdownMenuScrollSections.item4.url}
-                      />
-                    }
-                  />
-              ]
-              }
-              />
-            ) : (
-              <MenuItem
-                onTouchTap={this.handleClose}
-                primaryText={data.menu.item1.title}
-                style={styles.menuItem}
-                containerElement={<Link to={data.menu.item1.url} />}
-                onClick={this.withDropdown}
-                />
-            )}
+          <MenuItem
+            onTouchTap={this.handleClose}
+            primaryText={data.menu.item1.title}
+            style={styles.menuItem}
+            containerElement={<Link to={data.menu.item1.url} />}
+            onClick={this.withDropdown}
+            />
           <Divider />
           <MenuItem
             onTouchTap={this.handleClose}

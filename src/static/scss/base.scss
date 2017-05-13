@@ -4,12 +4,6 @@ body {
   font-family: Roboto;
 }
 
-body,
-h1 {
-  background-color: $cyan;
-  color: $magenta;
-}
-
 .container {
   padding-top: $heigth-navbar;
 }
@@ -25,7 +19,6 @@ h1 {
   h1 {
     color: $yellow;
     position: relative;
-    // top: -2rem;
   }
 }
 div[data-reactroot] {
