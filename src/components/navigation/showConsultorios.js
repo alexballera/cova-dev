@@ -1,9 +1,9 @@
 'use strict'
 import {$app} from '../layout/app'
-import {Common} from '../navigation'
+import Common from './Common'
 import hideViews from './hideViews'
 
-const onClickShowConsultorios = () => {
+const showConsultorios = () => {
   hideViews()
   Common()
 
@@ -12,4 +12,4 @@ const onClickShowConsultorios = () => {
   document.title = 'Consultorios'
 }
 
-module.exports = onClickShowConsultorios
+module.exports = showConsultorios

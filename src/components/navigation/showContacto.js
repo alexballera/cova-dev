@@ -1,10 +1,9 @@
 'use strict'
 import {$app} from '../layout/app'
-import {Common} from '../navigation'
+import Common from './Common'
 import hideViews from './hideViews'
 
-const onClickShowContacto = (e) => {
-  e.preventDefault()
+const onClickShowContacto = () => {
   hideViews()
   Common()
 

@@ -16,7 +16,6 @@ import Contacto from './views/contactenos'
 import Dialog from './components/dialog'
 import Footer from './components/footer'
 import {Navigation} from './components/navigation'
-import page from 'page'
 (() => {
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
@@ -37,6 +36,5 @@ import page from 'page'
     createFooter()
     Footer()
     Navigation()
-    page()
   }
 })()
