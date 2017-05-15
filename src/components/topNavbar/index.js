@@ -1,8 +1,8 @@
 'use strict'
 import yo from 'yo-yo'
-import Desktop from './templates/desktop'
+import {Desktop} from './templates/desktop'
 import sideNav from './templates/sideNav'
-import { DropdownDesktop, DropdownMobile } from './templates/dropdown'
+// import { DropdownDesktop, DropdownMobile } from './templates/dropdown'
 import JqueryOptions from './templates/jquery.options'
 import {Links} from '../navigation'
 
@@ -12,7 +12,7 @@ const elem = yo`
     <nav class="navbar-top">
       <div class="nav-wrapper">
         <a href=${Links.link1} class="brand-logo">
-          <img src="images/alenta-medical-care.png" alt="" class="header__image">
+          <img src="images/logo.jpg" alt="" class="header__image">
         </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         ${Desktop}
@@ -20,11 +20,14 @@ const elem = yo`
     </nav>
   </div>
   ${sideNav}
-  ${DropdownDesktop}
-  ${DropdownMobile}
 </div>
 `
-
+/**
+ * En caso de Dropdown agregar luego de ${sideNav}:
+ * ${DropdownDesktop}
+ * ${DropdownMobile}
+ * y en ${Desktop} agregar ${DesktopDropdown}
+ */
 export default () => {
   document.getElementById('navbar-top').appendChild(elem)
   JqueryOptions()

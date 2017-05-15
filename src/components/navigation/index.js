@@ -13,21 +13,21 @@ import page from 'page'
 const baseUri = '/'
 
 const Items = {
-  item1: 'Qué es Alenta',
-  item2: 'Consultorios',
-  item3: 'Áreas Médicas',
-  item4: 'Salas de Cirugía',
-  item5: 'Hotel',
-  item6: 'Contactenos'
+  item1: 'Home',
+  item2: 'Trabaja en USA',
+  item3: 'Crea tu empresa en USA',
+  item4: 'Nosotros',
+  item5: '',
+  item6: ''
 }
 
 const Links = {
   link1: baseUri,
-  link2: baseUri + 'consultorios',
-  link3: baseUri + 'areas-medicas',
-  link4: baseUri + 'cirugia',
-  link5: baseUri + 'hotel',
-  link6: baseUri + 'contactenos'
+  link2: baseUri + 'trabaja-en-usa',
+  link3: baseUri + 'crea-tu-empresa',
+  link4: baseUri + 'nosotros',
+  link5: baseUri + '',
+  link6: baseUri + ''
 }
 
 const Navigation = () => {
