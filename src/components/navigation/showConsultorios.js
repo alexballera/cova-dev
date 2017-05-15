@@ -3,8 +3,7 @@ import {$app} from '../layout/app'
 import {Common} from '../navigation'
 import hideViews from './hideViews'
 
-const onClickShowConsultorios = (e) => {
-  e.preventDefault()
+const onClickShowConsultorios = () => {
   hideViews()
   Common()
 
