@@ -6,7 +6,6 @@ import createMain from './components/layout/createMain'
 import createFooter from './components/layout/createFooter'
 import createLoader from './components/layout/createLoader'
 import topNavbar from './components/topNavbar'
-import formSlide from './components/carousel/forms'
 import Home from './views/home'
 import Consultorios from './views/consultorios'
 import Medicas from './views/medicas'
@@ -23,7 +22,6 @@ import {Navigation} from './components/navigation'
     createLoader()
     createNavbar()
     topNavbar()
-    formSlide()
     createMain()
     Home()
     Consultorios()

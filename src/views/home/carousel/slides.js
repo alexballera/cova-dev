@@ -51,8 +51,6 @@ const Slide1 = yo`
       <h3>${data.slide1.title}</h3>
       <p>${data.slide1.text}</p>
     </div>
-    <div id="formSlide1" class="formulario formulario-slider formulario-container">
-    </div>
 </picture>
 `
 const Slide2 = yo`
@@ -61,8 +59,6 @@ const Slide2 = yo`
     <div class="carousel-item-text text-right">
       <h3>${data.slide2.title}</h3>
       <p>${data.slide2.text}</p>
-    </div>
-    <div id="formSlide2" class="formulario formulario-slider formulario-container">
     </div>
 </picture>
 `
@@ -73,8 +69,6 @@ const Slide3 = yo`
       <h3>${data.slide3.title}</h3>
       <p>${data.slide3.text}</p>
     </div>
-    <div id="formSlide3" class="formulario formulario-slider formulario-container">
-    </div>
 </picture>
 `
 const Slide4 = yo`
@@ -84,8 +78,6 @@ const Slide4 = yo`
       <h3>${data.slide4.title}</h3>
       <p>${data.slide4.text}</p>
     </div>
-    <div id="formSlide4" class="formulario formulario-slider formulario-container">
-    </div>
 </picture>
 `
 const Slide5 = yo`
@@ -94,8 +86,6 @@ const Slide5 = yo`
     <div class="carousel-item-text text-right">
       <h3>${data.slide5.title}</h3>
       <p>${data.slide5.text}</p>
-    </div>
-    <div id="formSlide5" class="formulario formulario-slider formulario-container">
     </div>
 </picture>
 `

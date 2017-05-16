@@ -14,6 +14,4 @@ export default () => {
     $('.carousel').carousel('next')
     setTimeout(autoplay, 10500)
   }
-  // Formulario
-  $('#textarea1').trigger('autoresize')
 }

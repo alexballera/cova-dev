@@ -3,7 +3,7 @@ import {createHome} from './createHome'
 import Section1 from './section1'
 import Section2 from './section2'
 import loader from '../../components/loader'
-import Carousel from '../../components/carousel'
+import Carousel from './carousel'
 
 export default () => {
   createHome()
