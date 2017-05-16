@@ -4,7 +4,7 @@ import yo from 'yo-yo'
 const data = {
   slide1: {
     img: {
-      src: 'images/slide1.jpg',
+      src: 'images/banner-new-york.jpg',
       alt: 'Alenta'
     },
     title: 'Alenta',
@@ -12,7 +12,7 @@ const data = {
   },
   slide2: {
     img: {
-      src: 'images/slide2.jpg',
+      src: 'images/banner-new-york.jpg',
       alt: 'Alenta'
     },
     title: 'Salas de Cirugía',
@@ -20,7 +20,7 @@ const data = {
   },
   slide3: {
     img: {
-      src: 'images/slide3.jpg',
+      src: 'images/banner-new-york.jpg',
       alt: 'Alenta'
     },
     title: 'Áreas médicas y oficinas de servicios médicos',
@@ -28,7 +28,7 @@ const data = {
   },
   slide4: {
     img: {
-      src: 'images/slide4.jpg',
+      src: 'images/banner-new-york.jpg',
       alt: 'Alenta'
     },
     title: 'Hotel',
@@ -36,7 +36,7 @@ const data = {
   },
   slide5: {
     img: {
-      src: 'images/slide5.jpg',
+      src: 'images/banner-new-york.jpg',
       alt: 'Alenta'
     },
     title: 'Consultorios',

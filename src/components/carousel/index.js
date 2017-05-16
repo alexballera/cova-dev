@@ -1,7 +1,6 @@
 'use strict'
 
 import yo from 'yo-yo'
-import {app} from '../layout/app'
 import JqueryOptions from './jquery.options'
 import {
   Slide1,
@@ -21,6 +20,7 @@ const Slider = yo`
 </div>
 `
 export default () => {
-  app.appendChild(Slider)
+  const Home = document.getElementById('home')
+  Home.appendChild(Slider)
   JqueryOptions()
 }

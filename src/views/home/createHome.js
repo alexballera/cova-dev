@@ -1,10 +1,11 @@
 'use strict'
 
-export default () => {
+const home = document.createElement('div')
+home.setAttribute('id', 'home')
+
+const createHome = () => {
   const main = document.getElementById('main')
-
-  const home = document.createElement('div')
-  home.setAttribute('id', 'home')
-
   main.appendChild(home)
 }
+
+export {createHome, home}
