@@ -2,6 +2,10 @@
 import yo from 'yo-yo'
 
 const data = {
+  class: {
+    div: 'caption center-align',
+    h3: 'light grey-text text-lighten-3'
+  },
   slide1: {
     img: {
       src: 'images/banner-new-york.jpg',
@@ -45,48 +49,48 @@ const data = {
 }
 
 const Slide1 = yo`
-<picture class="carousel-item" href="#one!">
-    <img src=${data.slide1.img.src} height="600" alt=${data.slide1.img.alt} />
-    <div class="carousel-item-text text-right">
-      <h3>${data.slide1.title}</h3>
-      <p>${data.slide1.text}</p>
-    </div>
-</picture>
+<li>
+  <img src=${data.slide1.img.src} alt=${data.slide1.img.alt} />
+  <div className=${data.class.div}>
+    <h3 className=${data.class.h3}>${data.slide1.title}</h3>
+    <p>${data.slide1.text}</p>
+  </div>
+</li>
 `
 const Slide2 = yo`
-<picture class="carousel-item" href="#one!">
-    <img src=${data.slide2.img.src} height="600" alt=${data.slide2.img.alt} />
-    <div class="carousel-item-text text-right">
-      <h3>${data.slide2.title}</h3>
-      <p>${data.slide2.text}</p>
-    </div>
-</picture>
+<li>
+  <img src=${data.slide2.img.src} alt=${data.slide2.img.alt} />
+  <div className=${data.class.div}>
+    <h3 className=${data.class.h3}>${data.slide2.title}</h3>
+    <p>${data.slide2.text}</p>
+  </div>
+</li>
 `
 const Slide3 = yo`
-<picture class="carousel-item" href="#one!">
-    <img src=${data.slide3.img.src} height="600" alt=${data.slide3.img.alt} />
-    <div class="carousel-item-text text-right">
-      <h3>${data.slide3.title}</h3>
-      <p>${data.slide3.text}</p>
-    </div>
-</picture>
+<li>
+  <img src=${data.slide3.img.src} alt=${data.slide3.img.alt} />
+  <div className=${data.class.div}>
+    <h3 className=${data.class.h3}>${data.slide3.title}</h3>
+    <p>${data.slide3.text}</p>
+  </div>
+</li>
 `
 const Slide4 = yo`
-<picture class="carousel-item" href="#one!">
-    <img src=${data.slide4.img.src} height="600" alt=${data.slide4.img.alt} />
-    <div class="carousel-item-text text-right">
-      <h3>${data.slide4.title}</h3>
-      <p>${data.slide4.text}</p>
-    </div>
-</picture>
+<li>
+  <img src=${data.slide4.img.src} alt=${data.slide4.img.alt} />
+  <div className=${data.class.div}>
+    <h3 className=${data.class.h3}>${data.slide4.title}</h3>
+    <p>${data.slide4.text}</p>
+  </div>
+</li>
 `
 const Slide5 = yo`
-<picture class="carousel-item" href="#one!">
-    <img src=${data.slide5.img.src} height="600" alt=${data.slide5.img.alt} />
-    <div class="carousel-item-text text-right">
-      <h3>${data.slide5.title}</h3>
-      <p>${data.slide5.text}</p>
-    </div>
-</picture>
+<li>
+  <img src=${data.slide5.img.src} alt=${data.slide5.img.alt} />
+  <div className=${data.class.div}>
+    <h3 className=${data.class.h3}>${data.slide5.title}</h3>
+    <p>${data.slide5.text}</p>
+  </div>
+</li>
 `
 export {Slide1, Slide2, Slide3, Slide4, Slide5}
