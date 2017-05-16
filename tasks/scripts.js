@@ -7,13 +7,13 @@ import babelify from 'babelify'
 import rename from 'gulp-rename'
 
 gulp.task('build:scripts', () => {
-  var presets = {
-    presets: 'env'
-  }
-
   return browserify('./src/index.js')
-    .transform(babelify, {presets})
+    .transform(babelify)
     .bundle()
+    .on('error', (err) => {
+      console.log(err)
+      this.emit('end')
+    })
     .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(gulp.dest('./build/scripts'))

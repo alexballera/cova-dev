@@ -7,7 +7,7 @@ const showHome = () => {
   $app.find('#navbar-top').show('slow')
   $app.find('#link-home').show()
   $app.find('#link-alenta').show()
-  $app.find('#carousel').show('slow')
+  $app.find('#sliderHome').show('slow')
   $app.find('#home').show('slow')
   $app.find('#footer').show('slow')
   document.title = 'Cova Solutions'
