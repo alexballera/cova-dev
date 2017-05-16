@@ -10,6 +10,6 @@ const showHome = () => {
   $app.find('#carousel').show('slow')
   $app.find('#home').show('slow')
   $app.find('#footer').show('slow')
-  document.title = 'Alenta primer centro médico ambulatorio de Colombia'
+  document.title = 'Cova Solutions'
 }
 module.exports = showHome
