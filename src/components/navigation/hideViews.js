@@ -2,9 +2,9 @@
 import {$app} from '../layout/app'
 
 export default () => {
-  $app.find('#navbar-top').hide()
-  $app.find('#link-seccion').hide()
-  $app.find('#link-seccion-sidenav').hide()
+  // $app.find('#navbar-top').hide()
+  // $app.find('#link-seccion').hide()
+  // $app.find('#link-seccion-sidenav').hide()
   $app.find('#sliderHome').hide()
   $app.find('#home').hide()
   $app.find('#loader').hide()

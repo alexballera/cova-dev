@@ -1,5 +1,6 @@
 'use strict'
-
+global.jQuery = require('jquery')
+require('jquery-ui-dist/jquery-ui')
 import WebFont from './scripts/Webfont'
 import createNavbar from './components/layout/createNavbar'
 import createMain from './components/layout/createMain'
