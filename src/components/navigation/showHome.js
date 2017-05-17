@@ -1,6 +1,7 @@
 'use strict'
 import {$app} from '../layout/app'
 import hideViews from './hideViews'
+import {Title} from '../navigation'
 
 const showHome = () => {
   hideViews()
@@ -9,7 +10,6 @@ const showHome = () => {
   $app.find('#link-alenta').show()
   $app.find('#sliderHome').show('slow')
   $app.find('#home').show('slow')
-  $app.find('#footer').show('slow')
-  document.title = 'Cova Solutions'
+  document.title = `${Title.home}`
 }
 module.exports = showHome
