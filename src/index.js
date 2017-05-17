@@ -4,16 +4,14 @@ import WebFont from './scripts/Webfont'
 import createNavbar from './components/layout/createNavbar'
 import createMain from './components/layout/createMain'
 import createFooter from './components/layout/createFooter'
+import createLoader from './components/layout/createLoader'
 import topNavbar from './components/topNavbar'
-import Carousel from './components/carousel'
-import formSlide from './components/carousel/forms'
 import Home from './views/home'
-import Consultorios from './views/consultorios'
-import Medicas from './views/medicas'
-import Cirugias from './views/cirugias'
-import Hotel from './views/hotel'
-import Contacto from './views/contactenos'
-import Dialog from './components/dialog'
+import View1 from './views/view1'
+import View2 from './views/view2'
+import View3 from './views/view3'
+import View4 from './views/view4'
+import View5 from './views/view5'
 import Footer from './components/footer'
 import {Navigation} from './components/navigation'
 (() => {
@@ -21,18 +19,16 @@ import {Navigation} from './components/navigation'
 
   function onDOMLoad () {
     WebFont()
+    createLoader()
     createNavbar()
     topNavbar()
-    Carousel()
-    Dialog()
-    formSlide()
     createMain()
     Home()
-    Consultorios()
-    Medicas()
-    Cirugias()
-    Hotel()
-    Contacto()
+    View1()
+    View2()
+    View3()
+    View4()
+    View5()
     createFooter()
     Footer()
     Navigation()

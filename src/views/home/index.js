@@ -1,26 +1,14 @@
 'use strict'
-import createHome from './createHome'
-import Alenta from './alenta'
-import Localization from './localizacion'
-import Proyectos from './proyectos'
-import Formulario from './proyectos/formulario'
-import menuFlotante from './menuFlotante'
-import menuFlotanteAnimations from './menuFlotante/animations'
-import JqueryOptions from './jquery.options'
-import animateBanners from './animateBanners'
+import {createHome} from './createHome'
+import Section1 from './section1'
+import Section2 from './section2'
 import loader from '../../components/loader'
+import slider from './slider'
 
 export default () => {
   createHome()
-  const Home = document.getElementById('home')
-
   loader()
-  Home.appendChild(Alenta)
-  Home.appendChild(Localization)
-  Home.appendChild(Proyectos)
-  Formulario()
-  Home.appendChild(menuFlotante)
-  menuFlotanteAnimations()
-  JqueryOptions()
-  animateBanners()
+  slider()
+  Section1()
+  Section2()
 }
