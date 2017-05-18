@@ -2,15 +2,18 @@
 import {$app} from '../layout/app'
 // import Common from './Common'
 import hideViews from './hideViews'
-import {Title} from '../navigation'
+import {NavItems} from '../navigation'
 
 const showView1 = () => {
   hideViews()
   // Common()
 
-  $app.find('#seccion-showView1').show('fade', 1000)
-  $app.find('#li-showView1').addClass('activado')
-  document.title = `${Title.view1}`
+  const SectionID = '#seccion-' + `${NavItems.id.id1}`
+  const liID = '#li-' + `${NavItems.id.id1}`
+
+  $app.find(SectionID).show('fade', 1000)
+  $app.find(liID).addClass('activado')
+  document.title = `${NavItems.title.view1}`
 }
 
 module.exports = showView1

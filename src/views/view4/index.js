@@ -1,8 +1,8 @@
 'use strict'
 
-import {app} from '../../components/layout/app'
 import elem from './template'
 
 export default () => {
-  app.appendChild(elem)
+  const main = document.getElementById('main')
+  main.appendChild(elem)
 }

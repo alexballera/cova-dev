@@ -1,7 +1,7 @@
 'use strict'
 import {$app} from '../layout/app'
 import hideViews from './hideViews'
-import {Title} from '../navigation'
+import {NavItems} from '../navigation'
 
 const showHome = () => {
   hideViews()
@@ -10,6 +10,6 @@ const showHome = () => {
   // $app.find('#link-alenta').show()
   $app.find('#sliderHome').show('fade', 1000)
   $app.find('#home').show('fade', 1000)
-  document.title = `${Title.home}`
+  document.title = `${NavItems.title.home}`
 }
 module.exports = showHome
