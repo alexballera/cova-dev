@@ -8,6 +8,7 @@ import showView2 from './showView2'
 import showView3 from './showView3'
 import showView4 from './showView4'
 import showView5 from './showView5'
+import notFound from './notFound'
 import page from 'page'
 
 const baseUri = '/'
@@ -21,7 +22,8 @@ const NavItems = {
     item2: 'View 2',
     item3: 'View 3',
     item4: 'View 4',
-    item5: 'View 5'
+    item5: 'View 5',
+    nf: 'No Encontrado'
   },
   title: {
     home: 'Home',
@@ -29,7 +31,8 @@ const NavItems = {
     view2: 'View 2',
     view3: 'View 3',
     view4: 'View 4',
-    view5: 'View 5'
+    view5: 'View 5',
+    nf: 'No Encontrado'
   },
   id: {
     home: 'home',
@@ -37,7 +40,8 @@ const NavItems = {
     id2: id + '2',
     id3: id + '3',
     id4: id + '4',
-    id5: id + '5'
+    id5: id + '5',
+    nf: 'not-found'
   },
   links: {
     home: baseUri,
@@ -45,7 +49,8 @@ const NavItems = {
     link2: baseUri + id + '2',
     link3: baseUri + id + '3',
     link4: baseUri + id + '4',
-    link5: baseUri + id + '5'
+    link5: baseUri + id + '5',
+    nf: '*'
   }
 }
 
@@ -58,6 +63,7 @@ const Navigation = () => {
   page(NavItems.links.link3, showView3)
   page(NavItems.links.link4, showView4)
   page(NavItems.links.link5, showView5)
+  page(NavItems.links.nf, notFound)
   page()
 }
 
