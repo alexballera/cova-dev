@@ -6,7 +6,8 @@ import Views from './views'
 import Footer from './components/footer'
 import {Navigation} from './components/navigation'
 global.jQuery = require('jquery')
-require('jquery-ui-dist/jquery-ui')(() => {
+require('jquery-ui-dist/jquery-ui')
+function main () {
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
@@ -17,4 +18,5 @@ require('jquery-ui-dist/jquery-ui')(() => {
     Footer()
     Navigation()
   }
-})()
+}
+main()
